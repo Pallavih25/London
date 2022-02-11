@@ -1,0 +1,270 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~helper class css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container{
+	width:1140px;
+	margin:0 auto;
+}
+a:link,
+a:hover,
+a:focus,
+a:active{
+	text-decoration:none;
+}
+.row,
+.row::after,
+.row::before{
+	display:table;
+	clear:both;
+	width:100%;
+}
+.col-3,.col-6,.col-12,.col-7,.col-5,.col-8,.col-2{
+	float:left;
+	padding:0 15px;
+}
+.col-3{
+	width:25%;
+}
+.col-6{
+	width:50%;
+}
+.col-12{
+	width:100%;
+}
+.mb-10{
+	margin-bottom:10px;
+}
+.mt-45{
+	margin-top:45px;
+}
+.mt-70{
+	margin-top:70px;
+}
+/* .mt-25{ */
+	/* margin-top:25px; */
+/* } */
+.col-7{
+	width:calc((100% *7) / 12);
+}
+.col-5{
+	width:calc((100% * 5) / 12);
+}
+.col-2{
+	width:calc((100% * 2) / 12);
+}
+.col-8{
+	width:calc((100% * 8) /12);
+}
+.col-10{
+	width:calc((100% * 10) /12);
+}
+.text-right{
+	text-align:right;
+}
+.text-center{
+	text-align:center;
+}
+.mr-onegrid{
+	margin-left:calc(100% / 12);
+}
+.mb-25{
+   margin-bottom:25px;
+}
+.mb-50{
+   margin-bottom:50px;
+}
+.mb-16{
+   margin-bottom:16px;
+}
+.row > :first-child{
+	padding-left:0;
+}
+.row > :last-child{
+	padding-right:0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~header section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.header{
+	padding:25px 0px 0px;
+}
+.nav li {
+	display:inline-block;
+	list-style:none;
+    margin: 0 5px;
+}
+.nav li a{
+	display:inline-block;
+	font-size:18px;
+	font-weight:bold;
+	color:#006a4d;
+	padding:20px 15px 15px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+}
+.nav li a::after{
+	content:'';
+	position:absolute;
+	height:2px;
+	width:0%;
+	background-color:#006a4d;
+	left:0;
+	bottom:0;
+	transition:all 0.5s ease-in-out;
+}
+.nav li a:hover::after{
+	width:100%;
+}
+.nav li a:hover,
+.nav li a:focus,
+.nav li a:active{
+	color:#69be28;
+}
+.btn{
+	padding:20px 15px;
+	float:right;
+	color:#fff;
+	background-color:#69be28;
+	text-transform:uppercase;
+	border:0;
+	outline:none;
+	border-radius:3px;
+	border:3px solid #69be28;
+	cursor:pointer;
+	margin-bottom:0px;
+}
+.btn:hover,
+.btn:focus,
+.btn:active{
+	color:#69be28;
+	background-color:#fff;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~heroimh section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.heroimg{
+	background-image:url("../images./heroimg.jpg");
+	width:100%;
+	height:100vh;
+	background-size:cover;
+	position:relative;
+	background-size:100% 100%;
+}
+.caption{
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	position:absolute;
+	text-align:center;
+}
+.label-1{
+	font-size:32px;
+	color:#fff;
+}
+.heading{
+	font-size:58px;
+	color:#fff;
+	padding:27px 0px;
+	border-bottom:2px solid #fff;
+}
+.label-2{
+	font-size:22px;
+	color:#fff;
+	padding:20px 0 0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~intro section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.intro{
+	padding:125px 0 120px;
+}
+.intro-heading{
+	color:#006a4d;
+	font-size:36px;
+}
+.intro-para{
+	font-size:16px;
+	padding:20px 0 25px;
+	line-height:18px;
+	font-family: 'Open Sans', sans-serif;
+}
+.intro-subheading{
+	color:#006a4d;
+	font-size:20px;
+	font-family: 'Open Sans', sans-serif;
+}
+.intro-img{
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~info section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.info{
+	padding:105px 0px 100px;
+	background-color:#006a4d;	
+}
+.info-heading{
+	text-align:center;
+	font-size:36px;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+}
+.info-para{
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	line-height:19px;
+	font-family: 'Open Sans', sans-serif;
+}
+.img-heading{
+	font-size:18px;
+	color:#fff;
+	padding:12px 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.img-subheading{
+	font-size:14px;
+	color:#fff;
+	line-height:19px;
+	font-family: 'Open Sans', sans-serif;
+}
+.btn2{
+	padding:15px 20px;
+	color:#fff;
+	background-color:#006a4d;
+	text-transform:uppercase;
+	border:0;
+	outline:none;
+	border-radius:5px;
+	border:3px solid #fff;
+	cursor:pointer;
+}
+.btn2:hover,
+.btn2:focus,
+.btn2:active{
+	color:#006a4d;
+	background-color:#fff;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer section css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer{
+	padding:80px 0 75px;
+	background-color:#3c3c3c;
+}
+.link li{
+	display:inline-block;
+}
+.link li a{
+	font-size:16px;
+	color:#fff;
+}
+.ft-heading{
+	font-size:18px;
+	color:#fff;
+	margin:0 20px 10px 0;
+}
+.ft-icons li {
+	display:inline-block;
+	/* margin:0 3px; */
+}
+.ft-icons li a{
+	list-style:none;
+	display:inline-block;
+	color:#fff;
+	border-radius:50px;
+	border:2px solid #fff;
+	padding:10px 10px;
+}
